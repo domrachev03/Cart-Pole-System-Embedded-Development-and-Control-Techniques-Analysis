@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	}
 
     struct ifreq ifr;
-    strcpy(ifr.ifr_name, "can0");
+    strcpy(ifr.ifr_name, "slcan0");
     ioctl(s, SIOCGIFINDEX, &ifr);
     
 
